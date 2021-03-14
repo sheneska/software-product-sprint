@@ -38,5 +38,12 @@ function gallery(){
 function createMap() {
   const map = new google.maps.Map(
       document.getElementById('map'),
-      {center: {lat: 37.422, lng: -122.084}, zoom: 16});
+      //{center: {lat: 37.422, lng: -122.084}, zoom: 16});
+      {center: {lat: 18.1096, lng: -77.2975}, zoom: 10});
 }
+
+const trexMarker = new google.maps.Marker({
+    position: {lat: 18.1096, lng: 77.2975},
+    map: map,
+    title: 'Jamaica'
+  });
